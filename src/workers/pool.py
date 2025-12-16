@@ -1,7 +1,7 @@
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, Future
-from worker import WorkerPool
+from interfaces.worker import WorkerPool
 
 class ThreadWorkerPool(WorkerPool):
     def __init__(self, num_threads: int = 10):

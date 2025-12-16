@@ -1,7 +1,7 @@
 import time
 import threading
 from typing import List
-from data_source import Message
+from interfaces.data_source import Message
 
 class TimeBatch:
     def __init__(self, window_seconds: float = 300.0):
