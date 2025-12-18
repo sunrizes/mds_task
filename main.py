@@ -1,10 +1,10 @@
 import logging
 import time
-from messages.message import MessageSource
-from messages.processor import MessageStreamProcessor
-from files.file import ExponentialFileSource
-from files.processor import FileProcessor
-from workers.pool import ThreadWorkerPool
+from src.messages.message import MessageSource
+from src.messages.processor import MessageStreamProcessor
+from src.files.file import ExponentialFileSource
+from src.files.processor import FileProcessor
+from src.workers.pool import ThreadWorkerPool
 
 class DataProcessingSystem:
     def __init__(self, num_threads=10, message_rate=10.0, window_seconds=300.0,

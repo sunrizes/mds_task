@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: data_processing_system
+    volumes:
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python main.py
+
+  test:
+    build: .
+    container_name: data_processing_tests
+    command: python -m unittest discover tests -v

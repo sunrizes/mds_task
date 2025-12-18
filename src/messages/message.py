@@ -1,7 +1,7 @@
 import time
 import random
 from typing import Iterator
-from interfaces.data_source import DataSource, Message
+from src.interfaces.data_source import DataSource, Message
 
 class MessageSource(DataSource):
     def __init__(self, rate_per_minute: float = 10.0, duration_minutes: float = None):

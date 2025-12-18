@@ -1,6 +1,6 @@
 import random
 from typing import Iterator
-from interfaces.data_source import DataSource, File
+from src.interfaces.data_source import DataSource, File
 
 class ExponentialFileSource(DataSource):
     def __init__(self, num_files: int = 100, mean_size_mb: float = 5.0):

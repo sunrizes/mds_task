@@ -1,5 +1,5 @@
 from typing import List
-from interfaces.data_source import File
+from src.interfaces.data_source import File
 
 class FileBucket:
     def __init__(self, target_size_mb: float = 10.0):

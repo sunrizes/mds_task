@@ -1,7 +1,7 @@
 import threading
-from interfaces.data_source import DataSource
-from messages.batching import TimeBatch
-from interfaces.worker import WorkerPool
+from src.interfaces.data_source import DataSource
+from src.messages.batching import TimeBatch
+from src.interfaces.worker import WorkerPool
 
 class MessageStreamProcessor:
     def __init__(self, data_source: DataSource, worker_pool: WorkerPool,

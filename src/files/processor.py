@@ -1,6 +1,6 @@
-from interfaces.data_source import DataSource
-from files.bucketing import FileBucket
-from interfaces.worker import WorkerPool
+from src.interfaces.data_source import DataSource
+from src.files.bucketing import FileBucket
+from src.interfaces.worker import WorkerPool
 
 class FileProcessor:
     def __init__(self, data_source: DataSource, worker_pool: WorkerPool, 
