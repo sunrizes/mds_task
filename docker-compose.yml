@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   app:
     build: .
@@ -13,4 +11,6 @@ services:
   test:
     build: .
     container_name: data_processing_tests
-    command: python -m unittest discover tests -v
+    command: python -m unittest discover -s tests -t . -v
+    profiles:
+      - test
